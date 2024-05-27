@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NotesSQL</string>
+    <string name="addNote">Добавить заметку</string>
+</resources>
