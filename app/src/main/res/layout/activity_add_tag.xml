@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".AddTagActivity"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".AddNoteActivity">
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/addNoteHeading"
@@ -17,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"
-        android:text="Add Note"
+        android:text="Add Tag"
         android:textColor="@color/orange"
         android:textSize="24sp" />
 
@@ -35,41 +34,13 @@
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Note name"
+        android:hint="Name"
         android:padding="12dp"
         android:textSize="20sp"
         android:layout_below="@id/addNoteHeading"
         android:background="@drawable/orange_border"
         android:layout_marginTop="16dp"
         android:maxLines="1"/>
-    <EditText
-        android:id="@+id/contentEditText"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:hint="Description"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:gravity="top"
-        android:layout_below="@id/titleEditText"
-        android:background="@drawable/orange_border"
-        android:layout_marginTop="12dp"
-        />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tags"
-        android:textSize="20sp"
-        android:layout_marginTop="12dp"
-        android:layout_below="@id/contentEditText"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tagsList"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/orange_border"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="16dp"
 
-        />
 </RelativeLayout>

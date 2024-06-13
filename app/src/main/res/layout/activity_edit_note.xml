@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditNoteActivity">
+
+    <TextView
+        android:id="@+id/editTaskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Task"
+        android:textColor="@color/orange"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/updateTaskButton"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/baseline_check_box_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_alignTop="@+id/editTaskHeading" />
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Task title"
+        android:padding="12dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/editTaskHeading"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/updateDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/updateTitleEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Task description"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tagsLabelInUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateDescriptionEditText"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Chosen tags: "
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tagsListInUpdatePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tagsLabelInUpdate"
+        android:background="@drawable/orange_border"
+        />
+
+</RelativeLayout>

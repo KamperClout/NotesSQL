@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditTagActivity">
+
+    <TextView
+        android:id="@+id/editTagHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Tag"
+        android:textColor="@color/orange"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/updateTagButton"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/baseline_check_box_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_alignTop="@+id/editTagHeading" />
+
+    <EditText
+        android:id="@+id/updateTagNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Name"
+        android:padding="12dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/editTagHeading"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/tagsLabelInUpdateForUpdateTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/updateTagNameEditText"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Tasks: "
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRecyclerViewForTagUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:layout_below="@+id/tagsLabelInUpdateForUpdateTag"
+        android:padding="5dp" />
+
+
+</RelativeLayout>

@@ -13,7 +13,16 @@
         android:theme="@style/Theme.NotesSQL"
         tools:targetApi="31">
         <activity
+            android:name=".AddTagActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditTagActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
